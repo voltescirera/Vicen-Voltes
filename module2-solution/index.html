@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h1>Our Menu</h1>
+
+<div id="margins" class="col-lg-4 col-md-6 col-sm-12">
+  <div id="box">
+    <div id="chicken">Chicken</div>
+    <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+    </div>
+  </div>
+</div>
+
+<div id="margins" class="col-lg-4 col-md-6 col-sm-12">
+  <div id="box">
+    <div id="beef">Beef</div>
+    <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+    </div>
+  </div>
+</div>
+
+<div id="margins" class="col-lg-4 col-md-12 col-sm-12">
+  <div id="box">
+    <div id="sushi">Sushi</div>
+    <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
